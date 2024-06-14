@@ -72,15 +72,17 @@
       const cpf = document.getElementById('cpf').value;
       const sampleCode = document.getElementById('sampleCode').value;
       
-      // Validação simples (você pode adicionar validações mais complexas aqui)
-      const cpfValid = cpf === '123.456.789-00';
-      const sampleCodeValid = sampleCode === '123456';
+      // Validação simples (substitua com suas regras de validação reais)
+      const cpfValid = cpf === '70648616401'; // Exemplo de CPF válido
+      const sampleCodeValid = sampleCode === '123456'; // Exemplo de código de amostra válido
 
       if (cpfValid && sampleCodeValid) {
-        window.location.href = 'resultadosExame.html'; // Redireciona para a página de resultados
+        // Redireciona para a página de resultados
+        window.location.href = 'https://liatecbr.github.io/Resultados/';
         return false;
       } else {
-        alert('CPF ou código da amostra incorretos');
+        // Redireciona para a página de erro
+        window.location.href = 'https://liatecbr.github.io/erro/';
         return false;
       }
     }
